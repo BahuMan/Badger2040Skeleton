@@ -12,8 +12,8 @@ Looking through the code, I needed to cobble together 4 different parts of the P
 4. common
 
 In your root CMakeLists.txt, add the folling lines:
-```
-add_subdirectory(badger2040)
-target_link_libraries(ChoiceStory
-        badger2040)
-```
+> add_subdirectory(badger2040)
+
+Search for target_link_libraries and add the badger2040:
+> target_link_libraries(*YourProjectName*  
+>         badger2040)
